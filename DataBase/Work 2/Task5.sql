@@ -1,8 +1,8 @@
---5. Вывести BusinessEntityID, LastReceiptDate и сумму по StandardPrice для BusinessEntityID с разными LastReceiptDate, 
---предусмотреть вывод общей суммы для всех StandardPrice у различных BusinessEntityID из таблицы Purchasing.ProductVendor. (Использовать ROOLUP)
-SELECT BusinessEntityID,
-       LastReceiptDate,
-	   SUM(StandardPrice) AS SumStandartPrice
+--5. Р’С‹РІРµСЃС‚Рё BusinessEntityID, LastReceiptDate Рё СЃСѓРјРјСѓ РїРѕ StandardPrice РґР»СЏ BusinessEntityID СЃ СЂР°Р·РЅС‹РјРё LastReceiptDate, 
+--РїСЂРµРґСѓСЃРјРѕС‚СЂРµС‚СЊ РІС‹РІРѕРґ РѕР±С‰РµР№ СЃСѓРјРјС‹ РґР»СЏ РІСЃРµС… StandardPrice Сѓ СЂР°Р·Р»РёС‡РЅС‹С… BusinessEntityID РёР· С‚Р°Р±Р»РёС†С‹ Purchasing.ProductVendor. (РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ ROOLUP)
+SELECT BusinessEntityID
+     , LastReceiptDate
+     , SUM(StandardPrice) AS SumStandartPrice
 FROM Purchasing.ProductVendor
 GROUP BY
 ROLLUP (BusinessEntityID, LastReceiptDate);

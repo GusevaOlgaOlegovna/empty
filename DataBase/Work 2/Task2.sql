@@ -1,4 +1,4 @@
---2. Найти средний вес (Weight) из таблицы Production.Product, не учитывать пустые значения.
+п»ї--2. РќР°Р№С‚Рё СЃСЂРµРґРЅРёР№ РІРµСЃ (Weight) РёР· С‚Р°Р±Р»РёС†С‹ Production.Product, РЅРµ СѓС‡РёС‚С‹РІР°С‚СЊ РїСѓСЃС‚С‹Рµ Р·РЅР°С‡РµРЅРёСЏ.
 SELECT AVG([Weight]) AS AvgWeight
 FROM Production.Product
 WHERE [Weight] IS NOT NULL;

@@ -1,4 +1,4 @@
---4. Вывести пол, где среднее количество часов выходных больше 50 из HumanResources.Employee.
+--4. Р’С‹РІРµСЃС‚Рё РїРѕР», РіРґРµ СЃСЂРµРґРЅРµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‡Р°СЃРѕРІ РІС‹С…РѕРґРЅС‹С… Р±РѕР»СЊС€Рµ 50 РёР· HumanResources.Employee.
 SELECT Gender
      , AVG(VacationHours) AS AvgVacantionHours
 FROM HumanResources.Employee

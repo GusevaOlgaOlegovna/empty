@@ -1,7 +1,7 @@
---3. Для каждого пола найти суммарное количество часов отпуска из таблицы (поставить фильтр: работник был принят до 2008 года) 
---HumanResources.Employee, не учитывать пустые значения.
-SELECT SUM(VacationHours) AS SumVacationHours,
-       Gender
+--3. Р”Р»СЏ РєР°Р¶РґРѕРіРѕ РїРѕР»Р° РЅР°Р№С‚Рё СЃСѓРјРјР°СЂРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С‡Р°СЃРѕРІ РѕС‚РїСѓСЃРєР° РёР· С‚Р°Р±Р»РёС†С‹ (РїРѕСЃС‚Р°РІРёС‚СЊ С„РёР»СЊС‚СЂ: СЂР°Р±РѕС‚РЅРёРє Р±С‹Р» РїСЂРёРЅСЏС‚ РґРѕ 2008 РіРѕРґР°) 
+--HumanResources.Employee, РЅРµ СѓС‡РёС‚С‹РІР°С‚СЊ РїСѓСЃС‚С‹Рµ Р·РЅР°С‡РµРЅРёСЏ.
+SELECT SUM(VacationHours) AS SumVacationHours
+     , Gender
 FROM HumanResources.Employee
 WHERE HireDate <'2008' AND
 VacationHours IS NOT NULL

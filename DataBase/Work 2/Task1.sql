@@ -1,3 +1,3 @@
---1. Найти минимальную цену товара (ListPrice) из таблицы Production.Product
+--1. РќР°Р№С‚Рё РјРёРЅРёРјР°Р»СЊРЅСѓСЋ С†РµРЅСѓ С‚РѕРІР°СЂР° (ListPrice) РёР· С‚Р°Р±Р»РёС†С‹ Production.Product
 SELECT MIN(ListPrice) AS MinPrice
 FROM Production.Product
